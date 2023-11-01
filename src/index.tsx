@@ -20,8 +20,8 @@ export function App() {
 	];
 
 	return (
-		<div class='bg-slate-100 min-h-full'>
-			<h1 class="font-bold text-xl m-4">Lojinha</h1>
+		<div class='bg-zinc-300 min-h-full'>
+			<h1 class="pt-4 font-bold text-xl m-4">Lojinha</h1>
 			<div class="flex flex-nowrap">
 				{products.map((prd) => (
 					<ProductCard
