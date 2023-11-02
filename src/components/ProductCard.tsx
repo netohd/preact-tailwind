@@ -1,11 +1,11 @@
 const ProductCard = ({ imageUrl, name, price, originalPrice }) => {
   return (
     <div class="m-3 bg-zinc-900 rounded-lg w-60">
-      <div class="h-auto">
+      <div class="h-auto rounded-lg">
         <img
           alt="produto"
           src={imageUrl}
-          class="object-fill"
+          class="object-fill rounded-lg"
         />
       </div>
       <div class="p-4 flex flex-col bg-zinc-800 w-full rounded-b-lg">

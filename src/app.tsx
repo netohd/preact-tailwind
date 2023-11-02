@@ -1,9 +1,7 @@
-import { render } from 'preact';
-import "./index.css";
-import ProductCard from './components/ProductCard';
+import LargeProductCard from "./components/LargeProductCard";
 
 export function App() {
-	const products = [
+  const products = [
 		{
 			name: "Tênis de corrida Nike preto e branco",
 			price: "R$ 129,90",
@@ -23,18 +21,12 @@ export function App() {
 		<div class='bg-zinc-300 min-h-full'>
 			<h1 class="pt-4 font-bold text-xl m-4">Lojinha</h1>
 			<div class="flex flex-nowrap">
-				{products.map((prd) => (
-					<ProductCard
-						imageUrl={prd.imageUrl}
-						name={prd.name}
-						price={prd.price}
-						originalPrice={prd.originalPrice}
+					<LargeProductCard 
+						name={"Casacos e Jaquetas"}
+						discount={40}
+						imageUrl="https://www.amilesportes.com.br/lojas/00044767/prod/059839-1.jpg"
 					/>
-				))}
 			</div>
 		</div>
 	);
-};
-
-
-render(<App />, document.getElementById('app'));
+}
